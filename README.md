@@ -7,7 +7,7 @@
 - 為方便您快速產出，點選圖片一樣ＯＫ，並貼心為您保留前次選項。
 
 ## Quick view
-![main page](https://raw.githubusercontent.com/YunYuLo/restaurant_list/master/public/img/main.png)
+![main page](https://github.com/YunYuLo/talk_rubbish_generator/blob/master/img/main.png)
 
 ## Environment set up
 - Node.js
@@ -15,7 +15,7 @@
 - express-handlebars
 
 ### Installation
-- clone this URL: https://github.com/YunYuLo/restaurant_list.git
+- clone this URL: https://github.com/YunYuLo/talk_rubbish_generator.git
 - cd to the file
 - instal npm 
 - you can visit this web on: http://localhost:3000
