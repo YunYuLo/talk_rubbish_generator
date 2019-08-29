@@ -18,12 +18,11 @@ function talkRubbishGenerator(options) {
   let firstPhrase = task[options.jobs] || []
   let sentence = ''
 
-  sentence = `身為一個${jobInChinese[options.jobs]}，${sample(firstPhrase)}，${sample(phrase)}吧！！`
-
   if (firstPhrase.length === 0) {
     return '請至少選擇一種職業！！'
   }
 
+  sentence = `身為一個${jobInChinese[options.jobs]}，${sample(firstPhrase)}，${sample(phrase)}吧！！`
   return sentence
 
 }
