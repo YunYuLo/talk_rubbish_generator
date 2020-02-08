@@ -3,7 +3,12 @@ const app = express()
 const exphbs = require('express-handlebars')
 const bodyParser = require('body-parser')
 const talkRubbishGenerator = require('./talk_rubbish_generator')
+
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config()
+}
 const port = 3000
+
 
 const Handlebars = require("handlebars");
 
@@ -25,6 +30,6 @@ app.post('/', (req, res) => {
   res.render('index', ({ sentence, job: selectedJob.jobs }))
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Express is listening on http://localhost:${port}`)
 })
